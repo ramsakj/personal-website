@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container" id="main">
+    <form action="" method="post">
+        <h1>Kontakt</h1>
+        {% if success %}
+        <p class=success>{{ success }}</p>
+        {% endif %}
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        <label for="fname">Ime</label>
+        <input type="text" name="fname" placeholder="Ime" required>
+        <label for="lname">Priimek</label>
+        <input type="text" name="lname" placeholder="Priimek" required>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="E-mail" required>
+        <label for="msg">Tukaj zastavite vaše vprašanje</label>
+        <textarea name="msg" required> ...</textarea>
+        <input type="submit" value="Pošlji">
+    </form>
+</div>
+{% endblock %}

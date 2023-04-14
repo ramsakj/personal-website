@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container" id="main">
+  <form action="" method="post">
+    <h1>Prijava</h1>
+    {% if error %}
+    <p class=error>Napaka: {{ error }}</p>
+    {% endif %}
+    <label for="username">Uporabniško ime</label>          
+    <input type="text" placeholder="Vnesite uporabniško ime" name="username" required>
+    <label for="password">Geslo</label>
+    <input type="password" placeholder="Vnesite geslo" name="password" required>
+    <input type="submit" value="Prijava">
+    <p>Nimate računa?
+      <a id="reg-link" href="{{url_for('register')}}">Registrirajte se</a>
+    </p>
+  </form>
+</div>
+{% endblock %}

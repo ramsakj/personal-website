@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container" id="main">
+    <form action="" method="post">
+        <h1>Registracija</h1>
+        {% if error %}
+        <p class=error>Error: {{ error }}</p>
+        {% endif %}
+        <label for="fname">Ime</label>
+        <input type="text" placeholder="Vnesite ime" name="fname" required>
+        <label for="lname">Priimek</label>
+        <input type="text" placeholder="Vnesite priimek" name="lname" required>
+        <label for="email">E-mail</label>
+        <input type="text" placeholder="Vnesite e-mail" name="email" required>
+        <label for="username">Uporabniško ime</label>
+        <input type="text" placeholder="Vnesite uporabniško ime" name="username" required>
+        <label for="password">Geslo</label>
+        <input type="password" placeholder="Vnesite geslo" name="password" required>
+        <label for="password-rpt">Ponovno vnesite geslo</label>
+        <input type="password" placeholder="Ponovno vnesite geslo" name="password-rpt" required>
+        <label for="gender" id="gender">Izberite spol</label>
+        <div id="gender">
+            <label for="male">Moški</label>
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="female">Ženska</label>
+            <input type="radio" name="gender" id="female" value="F">
+            <input id="reg" type="submit" value="Registriraj se">
+        </div>
+    </form>
+</div>
+{% endblock %}

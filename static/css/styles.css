@@ -1,0 +1,346 @@
+html, body {
+    font-family: 'Slabo 27px', serif;    
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    background-image: linear-gradient(to right, #ffffff, #8fcbff);
+}
+
+h1,h2,h3 {
+    color: #0048b4;
+    font-family: 'Unica One', cursive;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+p, li, input, label, textarea {
+    font-size: 120%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #009dff ,#0048b4);
+    height: 47.33px;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    border-right: 1px solid #ffffff;
+}
+.navbar li:last-child {
+    float: right;
+    border-right: none;
+    border-left: 1px solid #ffffff;
+}
+.openbtn {
+    padding: 11px 40px;
+}
+a {
+    display: block;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Unica One', cursive;
+    font-weight: 700;
+}
+a:hover {
+    background-image: linear-gradient(to left, #0048b4, #001739);;
+    color: #fff;
+}
+.container, .blog-container, .container-home {
+    margin: 47.33px auto;
+    display: block;
+    justify-content: center;
+    height: 91.80vh;
+    margin-bottom: 40px;
+}
+
+input[type=text], input[type=password], textarea {
+    font-family: 'Slabo 27px', serif; 
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+
+input[type=submit], input[type=submit]#reg {
+    font-family: 'Unica One', cursive; 
+    width: 300px;
+    height: 40px;
+    margin-top: 8px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #009dff, #0048b4);
+    color: #fff;
+    border: 0;
+}
+
+input[type=submit]#reg {
+    float: right;
+}
+
+input[type=submit]:hover, input[type=submit]#reg:hover {
+    font-family: 'Unica One', cursive; 
+    background-image: linear-gradient(to left, #0048b4, #001739);
+    color: white;
+}
+
+#gender {
+    display: block;
+}
+
+#male, #female {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#reg-link {
+    display: flex;
+    padding: 0;
+    font-family: 'Unica One', cursive; 
+    width: 300px;
+    margin-top: 8px;
+    height: 40px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #009dff ,#0048b4);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+#reg-link:hover {
+    background-image: linear-gradient(to left, #0048b4, #001739);
+    color: #ffffff;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.error, .success {
+    background-color: rgb(255, 100, 100);
+    color: rgb(130, 0, 0);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10px;
+}
+
+.success {
+    background-color: rgb(156, 255, 171);
+    color: #005b08;
+}
+
+/* ---------------------------------------------------------------------- */
+
+#home-img {
+    position: absolute;
+    z-index: 1;
+    width: 36%;
+    bottom: 10px;
+    right: 10px;
+}
+
+#home-body {
+    overflow: hidden;
+}
+
+.container-home {
+    position: absolute;
+    z-index: 0;
+}
+
+#home-h1, #home-p, .home-a {
+    font-family: 'Unica One', cursive;
+    background-image: linear-gradient(to right, #009dff ,#0048b4);
+    color: #ffffff;
+    width: 40%;
+    margin-left: 4%;
+    padding: 5px 20px;
+    font-size: 60px;
+    font-weight: bolder;
+    transform: skewX(-15deg);
+    text-align: center;
+}
+
+.home-a:hover {
+    background-image: linear-gradient(to left, #0048b4, #001739);
+    color: #fff;
+}
+
+#home-p {
+    font-size: 30px;
+    width: 60%;
+}
+
+.home-a {
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+/* ---------------------------------------------------------------------- */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #009dff ,#0048b4);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 47.33px;
+    transition: 0.7s;
+    font-size: 120%;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    height: 47.33px;
+    font-size: 40px;
+    padding-left: 300px;
+    padding-right: 30px;
+    color: #ffffff;
+    }
+  
+  #main {
+    transition: margin-left;
+    padding: 10px 40px 10px 40px;
+    text-align: left;
+    width: 70%;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* -------------------------------------------------------- */
+
+.blog-container {
+    display: block;
+    height: 100%;
+}
+
+.container-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#article-content {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}    
+
+
+#article-content h2 {
+    padding: 6px 0;
+    margin: 0;
+    text-align: left;
+}
+
+#article-content p {
+    padding: 0 0 6px 0;
+    margin: 0;
+}
+
+.blog-article {
+    position: relative;
+    width: 30%;
+    height: 57vh;
+    overflow: hidden;
+    padding: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#blog-a {
+    padding: 0;
+    margin: 0
+}
+
+#block-img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(to left, #0048b4, #001739);
+
+}
+
+.blog-article:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+}
+
+#blog-link {
+    margin: 0;
+    padding: 0;
+    padding-top: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------- */
+
+.text-link {
+    font-family: 'Slabo 27px', serif; 
+    display: inline;
+    padding: 0;
+    margin: 0;
+    color: #0048b4;
+    font-weight: normal;
+}
+
+/* -------------------------------------------------- */
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 20vh;
+    max-height: 50vh;
+}
