@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>
-    <h1>HELLO WORLD</h1>
-    <a href="/">Home</a>
-    <a href="/portfolio">Portfolio</a>
-</p>
-{% block content %}
-{% endblock content %}
-</body>
+<html>
+    <head>
+        <title>Statenis</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+        <script src="{{url_for('static', filename='js/script.js')}}" async></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="author" content="Jure Ramšak">
+        <meta name="description" content="">
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a href="#" class="openbtn" onclick="openNav()">&#9776;</a></li>
+            <li><a href="{{url_for('login')}}">Prijava</a></li>
+        </ul>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#8678;</a>
+            <a href="{{url_for('home_page')}}">Domov</a>
+            <a href="#">O Statenisu</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Blog</a>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+    </body>
 </html>
