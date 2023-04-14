@@ -1,71 +1,27 @@
-{% extends "index.html" %}
-{% block content %}
-<div class="blog-container" id="main">
-    <h1>BLOG</h1>
-    <div class="container-content">
+<!DOCTYPE html>
+<html>
+    {% extends "index.html" %}
+    {% block content %}
+    <div class="blog-container" id="main">
+        <h1>BLOG</h1>
+        <div class="container-content">
 
-        <div class="blog-article">
-            <img id="block-img" src="#">
-            <div class="overlay">
-                <div class="text">
-                    <a id="blog-link" href="#">VEČ >>></a>
+            <div class="blog-article">
+                <img id="block-img-1" src="#">
+                <div class="overlay">
+                    <div class="text">
+                        <a id="blog-link" href="#">VEČ >>></a>
+                    </div>
+                </div>
+                <div id="article-content-1">
+                    <h2>teoretični uvod</h2>
+                    <p>
+                    Za uvod nekaj besed namenjam oblikovanju in opisu podatkovne baze. Opisujem kriterije filtriranja in grupiranja podatkov,
+                    upoštevajoč omejitve, ki se pri tem pojavljajo.
+                    </p>
                 </div>
             </div>
-            <div id="article-content">
-                <h2>teoretični uvod</h2>
-                <p>
-                Za uvod nekaj besed namenjam oblikovanju in opisu podatkovne baze. Opisujem kriterije filtriranja in grupiranja podatkov,
-                upoštevajoč omejitve, ki se pri tem pojavljajo.
-                </p>
-            </div>
         </div>
-
-        <div class="blog-article">
-            <img id="block-img" src="#">
-            <div id="article-content">
-                <h2>Roland Garros</h2>
-                <p>Monte Carlo will open the clay season. First Masters tournament on clay will feature Djoković, 
-                Nadal and big daddy Džumhur. Will Damćire extend his 1-0 h2h on clay against Rafa or will
-                the Spaniard prevail? Will he or will he not or will he not will he?
-                </p>
-            </div>
-            <a id="link" href="#">See more</a>
-        </div>
-
-        <div class="blog-article">
-            <img id="block-img" src="#">
-            <div id="article-content">
-                <h2>Roland Garros</h2>
-                <p>Monte Carlo will open the clay season. First Masters tournament on clay will feature Djoković, 
-                Nadal and big daddy Džumhur. Will Damćire extend his 1-0 h2h on clay against Rafa or will
-                the Spaniard prevail?
-                </p>
-            </div>
-            <a id="link" href="#">See more</a>
-        </div>
-
-        <div class="blog-article">
-            <img id="block-img" src="#">
-            <div id="article-content">
-                <h2>Roland Garros</h2>
-                <p>Monte Carlo will open the clay season. First Masters tournament on clay will feature Djoković, 
-                Nadal and big daddy Džumhur. Will Damćire extend his 1-0 h2h on clay against Rafa or will
-                the Spaniard prevail?
-                </p>
-            </div>
-            <a id="link" href="#">See more</a>
-        </div>
-
-        <div class="blog-article">
-            <img id="block-img" src="#">
-            <div id="article-content">
-                <h2>Roland Garros</h2>
-                <p>Monte Carlo will open the clay season. First Masters tournament on clay will feature Djoković.
-                </p>
-            </div>
-            <a id="link" href="#">See more</a>
-        </div>
-
     </div>
-</div>
-{% endblock %}
+    {% endblock %}
+</html>
